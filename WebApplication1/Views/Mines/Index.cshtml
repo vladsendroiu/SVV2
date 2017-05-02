@@ -1,0 +1,34 @@
+﻿@model WebApplication1.Models.City
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+<table>
+    <tr>
+        @foreach( var res in this.Model.Resources)
+        {
+            <td class="res-img @(res.Type)"><img src="~/Content/img/icon-@(res.Type).png"></td>
+            <td class="res-value @(res.Type)">@res.Value.ToString("F4")</td>
+            <td class="res-update @(res.Type)">@res.LastUpdate.ToString()</td>
+        }
+    </tr>
+
+</table>
+<table class="mines">
+    @foreach (var mine in this.Model.Mines)
+    {
+        <tr class="@(mine.Type)">
+            <td><img src="~/Content/img/icon-@(mine.Type).png"></td>
+            <td>@mine.Type</td>
+            <td>@mine.Level</td>
+            <td>@Html.ActionLink("Details", "Details", new {mineId = mine.MineId })</td>
+            <td class="hourProduction">@mine.GetProductionPerHour()</td>
+        </tr>
+    }
+</table>
+@section Scripts {
+    <script src="~/Scripts/myscripts/mines.js"></script>
+    <script src="~/Scripts/Date.min.js"></script>
+    }

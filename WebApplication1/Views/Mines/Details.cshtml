@@ -1,0 +1,30 @@
+﻿@model WebApplication1.Models.Mine
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<div class="mine-detail">
+    @if (this.Model.Type == WebApplication1.Models.ResourceType.Wheat)
+    {
+        <p>Your population`s food is produced here. By increasing the farm`s level, you increase its crop production.</p>;
+    }
+    @if (this.Model.Type == WebApplication1.Models.ResourceType.Clay)
+    {
+        <p>Clay is produced here. By increasing its level, you increase the clay production.</p>;
+    }
+    @if (this.Model.Type == WebApplication1.Models.ResourceType.Wood)
+    {
+        <p>The woodcutter cuts down trees in order to produce lumber. The further you extend the woodcutter, the more lumber is produced</p>;
+    }
+    @if (this.Model.Type == WebApplication1.Models.ResourceType.Iron)
+    {
+        <p>Here miners produce the precious resource of iron. By increasing the mine`s level, you increase the iron production.</p>;
+    }
+    <img src="~/Content/img/mine-@(this.Model.Type).png" />
+    <table>
+        <tr><td>Mine level: @this.Model.Level</td></tr>
+        <tr><td>Production for current level: @(this.Model.Level * 13)</td></tr>
+        <tr><td>Production for next level: @((this.Model.Level + 1) * 13)</td></tr>
+    </table>
+</div>
