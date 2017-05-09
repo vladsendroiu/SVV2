@@ -28,3 +28,9 @@
         <tr><td>Production for next level: @((this.Model.Level + 1) * 13)</td></tr>
     </table>
 </div>
+@using (Html.BeginForm("Upgrade","Mines"))
+{
+    @Html.HiddenFor(m=> m.MineId)
+    <div>Do a fast upgrade: @Html.CheckBox("fastUpgrade")</div>
+    <button type="submit">Upgrade</button>
+}

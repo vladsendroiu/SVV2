@@ -116,3 +116,8 @@ C:\Users\svuser\Documents\Visual Studio 2017\Projects\VladSendroiu\WebApplicatio
 C:\Users\svuser\Documents\Visual Studio 2017\Projects\VladSendroiu\WebApplication1\bin\roslyn\System.Xml.XmlDocument.dll
 C:\Users\svuser\Documents\Visual Studio 2017\Projects\VladSendroiu\WebApplication1\bin\roslyn\System.Xml.XPath.dll
 C:\Users\svuser\Documents\Visual Studio 2017\Projects\VladSendroiu\WebApplication1\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\svuser\Documents\Visual Studio 2017\Projects\VladSendroiu\WebApplication1\bin\System.ValueTuple.dll
+C:\Users\svuser\Documents\Visual Studio 2017\Projects\VladSendroiu\WebApplication1\obj\Debug\WebApplication1.Migrations.InitialCreate.resources
+C:\Users\svuser\Documents\Visual Studio 2017\Projects\VladSendroiu\WebApplication1\obj\Debug\WebApplication1.csproj.GenerateResource.Cache
+C:\Users\svuser\Documents\Visual Studio 2017\Projects\VladSendroiu\WebApplication1\obj\Debug\WebApplication1.Migrations.UpgradeCompletesAt.resources
+C:\Users\svuser\Documents\Visual Studio 2017\Projects\VladSendroiu\WebApplication1\obj\Debug\WebApplication1.Migrations.BuildingClasses.resources

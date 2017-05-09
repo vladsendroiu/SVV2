@@ -83,30 +83,80 @@ table, tr, td {
 }
 
     .mine-level:hover {
-        transform: scale(1.5);
+        transform: scale(1.3);
         
     }
-.mine-wheat {
+.mine-wheat1 {
     background: yellow;
-    left: 97px;
-    top: 137px;
+    left: 247px;
+    top: 23px;
 }
-.mine-iron {
+.mine-wheat2 {
+    background: yellow;
+    left: 373px;
+    top: 157px;
+}
+.mine-wheat3 {
+    background: yellow;
+    left: 126px;
+    top: 112px;
+}
+.mine-wheat4 {
+    background: yellow;
+    left: 126px;
+    top: 158px;
+}
+.mine-wheat5 {
+    background: yellow;
+    left: 47px;
+    top: 172px;
+}
+.mine-wheat6 {
+    background: yellow;
+    left: 47px;
+    top: 115px;
+}
+.mine-iron1 {
     background: gray;
     left: 343px;
     top: 100px;
 }
-.mine-clay {
+.mine-iron2 {
+    background: gray;
+    left: 96px;
+    top: 62px;
+}
+.mine-clay1 {
     background: #8a2523;
     left: 247px;
     top: 75px;
 }
-.mine-wood {
+.mine-clay2 {
+    background: #8a2523;
+    left: 335px;
+    top: 223px;
+}
+.mine-clay3 {
+    background: #8a2523;
+    left: 149px;
+    top: 240px;
+}
+.mine-wood1 {
     background: green;
     left: 247px;
     top: 200px;
-    transform: translate(10.5px, 10.3px);
 }
+.mine-wood2 {
+    background: green;
+    left: 339px;
+    top: 31px;
+}
+.mine-wood3 {
+    background: green;
+    left: 115px;
+    top: 23px;
+}
+/*
 @keyframes upgrading{
     0%{
         transform:scale(1);
@@ -117,7 +167,7 @@ table, tr, td {
     100% {
         transform: scale(1);
     }
-}
+}*/
 .upgrading {
     animation:upgrading 0.5s infinite;
     

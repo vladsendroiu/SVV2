@@ -1,0 +1,36 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+<h2>Index</h2>
+<table class="mines">
+    <tr>
+        <td>Tip</td>
+        <td>Nivel</td>
+        <td>Action</td>
+    </tr>
+    @foreach (var building in this.Model.Buildings)
+    {
+        <tr class="@(building.BuildingType)">
+            @if (building.BuildingType != null)
+            {
+                <td>@(building.BuildingType.Name)</td>
+            }
+            else
+            {
+                <td>Empty</td>
+            }
+
+            <td>@building.Level</td>
+            @if (building.BuildingType != null)
+            {
+                <td>@Html.ActionLink("Details", "Details", new { BuildingId = building.BuildingId })</td>
+            }
+            else
+            {
+                <td>@Html.ActionLink("Build", "Build", new { BuildingId = building.BuildingId })</td>
+            }
+            
+        </tr>
+    }
+</table>
