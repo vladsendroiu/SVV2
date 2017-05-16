@@ -172,3 +172,35 @@ table, tr, td {
     animation:upgrading 0.5s infinite;
     
 }
+
+#mine-details-container{
+    position: absolute;
+    top:100px;
+    left: 50%;
+    width: 800px;
+    margin-left: -400px;
+   background-color: white;
+   min-height:300px;
+   display: none;
+   
+}
+#mine-details-container.show {
+        display: block;
+       
+    }
+#mine-details-container > .close-btn{
+    display:block;
+    position:absolute;
+    width:20px;
+    height:20px;
+    top:20px;
+    right:20px;
+    cursor:pointer;
+}
+.mine-details-btn {
+        
+        cursor: pointer;
+    }
+.res-update {
+    display: none;
+}
